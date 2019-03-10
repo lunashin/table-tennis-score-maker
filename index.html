@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css" >
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="score.js"></script>
+
+    <div class="container">
+        <div class="row">
+            <div id="btn-me" class="col-sm">
+                <label>自分の得点</label><br>
+                <button id="btn-me-sa" onclick="func_a('me-sa')" class="btn btn-primary" >SA</button><br>
+                <button id="btn-me-2" onclick="func_a('me-2')" class="btn btn-primary" >2打</button><br>
+                <button id="btn-me-3" onclick="func_a('me-3')" class="btn btn-primary" >3打</button><br>
+                <button id="btn-me-4" onclick="func_a('me-4')" class="btn btn-primary" >4打</button><br>
+                <button id="btn-me-5" onclick="func_a('me-5')" class="btn btn-primary" >5打</button><br>
+                <button id="btn-me-6" onclick="func_a('me-6')" class="btn btn-primary" >6打以上</button>
+            </div>
+            <div id="score" class="col-sm">
+                <label class="">スコア</label><br>
+                <table id="score-table" class="table table-dark">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">自分</th>
+                        <th scope="col">相手</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div id="btn-enemy" class="col-sm">
+                <label>相手の得点</label><br>
+                <button id="btn-enemy-sa" onclick="func_a('enemy-sa')" class="btn btn-danger" >SA</button><br>
+                <button id="btn-enemy-2" onclick="func_a('enemy-2')" class="btn btn-danger" >2打</button><br>
+                <button id="btn-enemy-3" onclick="func_a('enemy-3')" class="btn btn-danger" >3打</button><br>
+                <button id="btn-enemy-4" onclick="func_a('enemy-4')" class="btn btn-danger" >4打</button><br>
+                <button id="btn-enemy-5" onclick="func_a('enemy-5')" class="btn btn-danger" >5打</button><br>
+                <button id="btn-enemy-6" onclick="func_a('enemy-6')" class="btn btn-danger" >6打以上</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
